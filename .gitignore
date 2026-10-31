@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.vcxproj.user
+
+# Paquetes NuGet (se restauran solos con packages.config)
+packages/
+
+# Archivos de Python que no pertenecen al proyecto
+*.whl
+
+# Record del jugador (archivo local de cada PC)
+record.txt
+record.txt.tmp
