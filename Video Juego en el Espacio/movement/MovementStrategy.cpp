@@ -1,5 +1,5 @@
-#include "MovementStrategy.h"
-#include "Config.h"
+#include "movement/MovementStrategy.h"
+#include "common/Config.h"
 #include <cmath>
 
 namespace

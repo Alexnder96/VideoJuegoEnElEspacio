@@ -1,114 +1,160 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="core">
+      <UniqueIdentifier>{9C607BE2-F4EE-50A8-93A5-D8145F91E602}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="input">
+      <UniqueIdentifier>{91AF9CCC-87CC-593C-B8E8-E3B61DD28861}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="entities">
+      <UniqueIdentifier>{81270375-A58C-508A-85F2-B5080F136820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="movement">
+      <UniqueIdentifier>{D5AA397C-E455-5D65-AB24-820B9370DDCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="systems">
+      <UniqueIdentifier>{846B13F2-B4AF-51BD-B215-AA66791F6C18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{736BF600-8AEB-5B02-9DD1-DC2D78A01360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{EA9C61F3-3DBD-59C0-A138-D37D4071E456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{1D636A95-C8D2-5BEB-A712-0AD4667DF5CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{8D4CAFFE-17E2-5745-9E64-CD97A4F1C29F}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Animation.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="core\Game.cpp">
+      <Filter>core</Filter>
     </ClCompile>
-    <ClCompile Include="AssetManager.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="input\InputManager.cpp">
+      <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\Enemy.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="Entity.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\Entity.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="Explosion.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\Explosion.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\GameWorld.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="HUDManager.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\Player.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\Potion.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="MovementStrategy.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="entities\Projectile.cpp">
+      <Filter>entities</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="movement\MovementStrategy.cpp">
+      <Filter>movement</Filter>
     </ClCompile>
-    <ClCompile Include="Potion.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="systems\CollisionSystem.cpp">
+      <Filter>systems</Filter>
     </ClCompile>
-    <ClCompile Include="Projectile.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="systems\CombatSystem.cpp">
+      <Filter>systems</Filter>
     </ClCompile>
-    <ClCompile Include="Starfield.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="systems\PotionSystem.cpp">
+      <Filter>systems</Filter>
     </ClCompile>
-    <ClCompile Include="WaveManager.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="systems\WaveManager.cpp">
+      <Filter>systems</Filter>
+    </ClCompile>
+    <ClCompile Include="ui\HUDManager.cpp">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\Animation.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\Starfield.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="resources\AssetManager.cpp">
+      <Filter>resources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animation.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="core\Game.h">
+      <Filter>core</Filter>
     </ClInclude>
-    <ClInclude Include="AssetManager.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="core\GameState.h">
+      <Filter>core</Filter>
     </ClInclude>
-    <ClInclude Include="Config.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="input\InputManager.h">
+      <Filter>input</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\Enemy.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="Entity.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\Entity.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="Explosion.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\Explosion.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\GameWorld.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="HUDManager.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\Player.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="MovementStrategy.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\Potion.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectPool.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="entities\Projectile.h">
+      <Filter>entities</Filter>
     </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="movement\MovementStrategy.h">
+      <Filter>movement</Filter>
     </ClInclude>
-    <ClInclude Include="Potion.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="systems\CollisionSystem.h">
+      <Filter>systems</Filter>
     </ClInclude>
-    <ClInclude Include="Projectile.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="systems\CombatSystem.h">
+      <Filter>systems</Filter>
     </ClInclude>
-    <ClInclude Include="Random.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="systems\PotionSystem.h">
+      <Filter>systems</Filter>
     </ClInclude>
-    <ClInclude Include="Starfield.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="systems\WaveManager.h">
+      <Filter>systems</Filter>
     </ClInclude>
-    <ClInclude Include="WaveManager.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="ui\HUDManager.h">
+      <Filter>ui</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\Animation.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\Starfield.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\AssetManager.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Config.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\ObjectPool.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Random.h">
+      <Filter>common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

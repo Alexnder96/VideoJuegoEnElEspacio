@@ -1,4 +1,4 @@
-#include "AssetManager.h"
+#include "resources/AssetManager.h"
 
 AssetManager::AssetManager()
     : textures(), sounds(), soundLoaded(), assetsPath("assets/"), loaded(false)

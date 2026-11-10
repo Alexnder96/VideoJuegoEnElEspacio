@@ -1,6 +1,6 @@
-#include "Explosion.h"
-#include "AssetManager.h"
-#include "Config.h"
+#include "entities/Explosion.h"
+#include "resources/AssetManager.h"
+#include "common/Config.h"
 
 Explosion::Explosion()
     : Entity(0.0f, 0.0f, 0.0f, 0.0f)

@@ -1,6 +1,6 @@
 #pragma once
-#include "Enemy.h"
-#include "ObjectPool.h"
+#include "entities/Enemy.h"
+#include "common/ObjectPool.h"
 
 // Parametros de dificultad de una oleada (se calculan con Config.h)
 struct WaveConfig

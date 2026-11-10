@@ -1,6 +1,6 @@
-#include "Projectile.h"
-#include "AssetManager.h"
-#include "Config.h"
+#include "entities/Projectile.h"
+#include "resources/AssetManager.h"
+#include "common/Config.h"
 
 Projectile::Projectile()
     : Entity(0.0f, 0.0f, 0.0f, 0.0f),

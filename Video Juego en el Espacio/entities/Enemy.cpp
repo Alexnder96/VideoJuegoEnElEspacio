@@ -1,7 +1,7 @@
-#include "Enemy.h"
-#include "AssetManager.h"
-#include "Config.h"
-#include "Random.h"
+#include "entities/Enemy.h"
+#include "resources/AssetManager.h"
+#include "common/Config.h"
+#include "common/Random.h"
 #include <cmath>
 #include <utility>
 

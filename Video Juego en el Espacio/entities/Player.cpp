@@ -1,5 +1,5 @@
-#include "Player.h"
-#include "Config.h"
+#include "entities/Player.h"
+#include "common/Config.h"
 
 Player::Player(float startX, float startY)
     : Entity(startX, startY, Config::PLAYER_MAX_SPEED, 0.0f),

@@ -1,4 +1,4 @@
-#include "Animation.h"
+#include "graphics/Animation.h"
 
 Animation::Animation()
     : sheet(nullptr), frameCount(1), currentFrame(0),

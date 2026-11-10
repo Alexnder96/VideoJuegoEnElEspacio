@@ -1,6 +1,6 @@
 #pragma once
 #include "raylib.h"
-#include "Config.h"
+#include "common/Config.h"
 
 // =============================================================================
 //  Starfield: fondo de estrellas con efecto de profundidad (parallax).

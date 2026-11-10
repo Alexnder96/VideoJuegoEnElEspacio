@@ -1,6 +1,6 @@
-#include "Potion.h"
-#include "AssetManager.h"
-#include "Config.h"
+#include "entities/Potion.h"
+#include "resources/AssetManager.h"
+#include "common/Config.h"
 #include <cmath>
 
 // La estrategia de caida se crea UNA vez aqui (el pool crea las pociones al

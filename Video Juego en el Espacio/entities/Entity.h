@@ -1,6 +1,6 @@
 #pragma once
 #include "raylib.h"
-#include "Animation.h"
+#include "graphics/Animation.h"
 
 // =============================================================================
 //  Entity (clase base abstracta)

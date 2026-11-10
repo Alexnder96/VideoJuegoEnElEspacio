@@ -1,5 +1,5 @@
-#include "Starfield.h"
-#include "Random.h"
+#include "graphics/Starfield.h"
+#include "common/Random.h"
 
 Starfield::Starfield()
     : stars()

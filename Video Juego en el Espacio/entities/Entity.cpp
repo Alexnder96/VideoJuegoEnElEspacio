@@ -1,4 +1,4 @@
-#include "Entity.h"
+#include "entities/Entity.h"
 
 Entity::Entity(float startX, float startY, float startSpeedX, float startSpeedY)
     : x(startX), y(startY), speedX(startSpeedX), speedY(startSpeedY),

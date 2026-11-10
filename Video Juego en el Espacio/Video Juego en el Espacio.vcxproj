@@ -78,6 +78,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -96,6 +97,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -112,6 +114,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +133,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,38 +147,49 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Animation.cpp" />
-    <ClCompile Include="AssetManager.cpp" />
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="Explosion.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="HUDManager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MovementStrategy.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Potion.cpp" />
-    <ClCompile Include="Projectile.cpp" />
-    <ClCompile Include="Starfield.cpp" />
-    <ClCompile Include="WaveManager.cpp" />
+    <ClCompile Include="core\Game.cpp" />
+    <ClCompile Include="input\InputManager.cpp" />
+    <ClCompile Include="entities\Enemy.cpp" />
+    <ClCompile Include="entities\Entity.cpp" />
+    <ClCompile Include="entities\Explosion.cpp" />
+    <ClCompile Include="entities\GameWorld.cpp" />
+    <ClCompile Include="entities\Player.cpp" />
+    <ClCompile Include="entities\Potion.cpp" />
+    <ClCompile Include="entities\Projectile.cpp" />
+    <ClCompile Include="movement\MovementStrategy.cpp" />
+    <ClCompile Include="systems\CollisionSystem.cpp" />
+    <ClCompile Include="systems\CombatSystem.cpp" />
+    <ClCompile Include="systems\PotionSystem.cpp" />
+    <ClCompile Include="systems\WaveManager.cpp" />
+    <ClCompile Include="ui\HUDManager.cpp" />
+    <ClCompile Include="graphics\Animation.cpp" />
+    <ClCompile Include="graphics\Starfield.cpp" />
+    <ClCompile Include="resources\AssetManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Animation.h" />
-    <ClInclude Include="AssetManager.h" />
-    <ClInclude Include="Config.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="Explosion.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="HUDManager.h" />
-    <ClInclude Include="MovementStrategy.h" />
-    <ClInclude Include="ObjectPool.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Potion.h" />
-    <ClInclude Include="Projectile.h" />
-    <ClInclude Include="Random.h" />
-    <ClInclude Include="Starfield.h" />
-    <ClInclude Include="WaveManager.h" />
+    <ClInclude Include="core\Game.h" />
+    <ClInclude Include="core\GameState.h" />
+    <ClInclude Include="input\InputManager.h" />
+    <ClInclude Include="entities\Enemy.h" />
+    <ClInclude Include="entities\Entity.h" />
+    <ClInclude Include="entities\Explosion.h" />
+    <ClInclude Include="entities\GameWorld.h" />
+    <ClInclude Include="entities\Player.h" />
+    <ClInclude Include="entities\Potion.h" />
+    <ClInclude Include="entities\Projectile.h" />
+    <ClInclude Include="movement\MovementStrategy.h" />
+    <ClInclude Include="systems\CollisionSystem.h" />
+    <ClInclude Include="systems\CombatSystem.h" />
+    <ClInclude Include="systems\PotionSystem.h" />
+    <ClInclude Include="systems\WaveManager.h" />
+    <ClInclude Include="ui\HUDManager.h" />
+    <ClInclude Include="graphics\Animation.h" />
+    <ClInclude Include="graphics\Starfield.h" />
+    <ClInclude Include="resources\AssetManager.h" />
+    <ClInclude Include="common\Config.h" />
+    <ClInclude Include="common\ObjectPool.h" />
+    <ClInclude Include="common\Random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

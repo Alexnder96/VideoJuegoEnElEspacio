@@ -4,7 +4,7 @@
 //
 //  Punto de entrada: crea el juego y ejecuta el Game Loop.
 // =============================================================================
-#include "Game.h"
+#include "core/Game.h"
 
 int main()
 {

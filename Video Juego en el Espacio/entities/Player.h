@@ -1,5 +1,5 @@
 #pragma once
-#include "Entity.h"
+#include "entities/Entity.h"
 
 // =============================================================================
 //  Player: nave del jugador.
@@ -30,7 +30,7 @@ public:
     void move(float dx, float dy);
 
     bool    canShoot() const;       // true si ya paso el tiempo de recarga
-    void    shoot();                // reinicia la recarga (la bala la crea Game)
+    void    shoot();                // reinicia la recarga (la bala la crea CombatSystem)
     Vector2 getGunPosition() const; // punta de la nave
 
     /// Resta vida. Durante la invulnerabilidad no recibe dano.

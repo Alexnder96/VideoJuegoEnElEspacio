@@ -1,6 +1,6 @@
-#include "HUDManager.h"
-#include "AssetManager.h"
-#include "Config.h"
+#include "ui/HUDManager.h"
+#include "resources/AssetManager.h"
+#include "common/Config.h"
 #include <cmath>
 
 namespace

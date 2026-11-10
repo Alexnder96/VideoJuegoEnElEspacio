@@ -1,8 +1,8 @@
 #pragma once
 #include "raylib.h"
-#include "Player.h"
-#include "WaveManager.h"
-#include "AssetManager.h"
+#include "entities/Player.h"
+#include "systems/WaveManager.h"
+#include "resources/AssetManager.h"
 #include <string>
 
 // =============================================================================

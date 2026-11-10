@@ -1,7 +1,7 @@
-#include "WaveManager.h"
-#include "AssetManager.h"
-#include "Config.h"
-#include "Random.h"
+#include "systems/WaveManager.h"
+#include "resources/AssetManager.h"
+#include "common/Config.h"
+#include "common/Random.h"
 
 WaveManager::WaveManager()
     : currentWave(0), enemiesToSpawn(0), spawnTimer(0.0f), bannerTimer(0.0f),

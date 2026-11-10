@@ -1,6 +1,6 @@
 #pragma once
-#include "Entity.h"
-#include "MovementStrategy.h"
+#include "entities/Entity.h"
+#include "movement/MovementStrategy.h"
 #include <memory>
 
 // =============================================================================
